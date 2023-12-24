@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Senne Weijmiens</title>
+  <link rel="icon" href="Images/Portrait Square.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="CSS/reset.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/Smartalarmclock.css" />
+
+  <script src="JS/jquery.js"></script>
+  <script src="JS/header.js" defer></script>
+ 
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">Senne Weijmiens</div>
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <nav class="nav-menu">
+        <ul>
+            <li class="nav__item"><a href="#">Home</a></li>
+            <li class="nav__item"><a href="about.html">About me</a></li>
+            <li class="nav__item"><a href="projects.html">Projects</a></li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <div class="content">
+    <div>
+      <h2>Smart Alarm Clock</h2>
+      <p>For practice enterprise 1, we had to create a coding project in a group of at least two people. We could choose
+        what we wanted to make, subject to the teacher's approval. We could make something completely digital, or
+        something that involved some hardware.
+        <br><br>
+        Xander (my team member) and I decided to make a "Smart Alarm Clock". This alarm clock would get events out of your
+        personal calendar, then set an appropriate alarm to wake you up on time. Of course, you also have to set a time to
+        let the device know how much before the event you want to be woken up.
+        <br> <br>
+        For example, if you have a lesson at 9:00 a.m. and want to wake up 2 hours before the event, you will
+        automatically be woken up by your alarm. If your lesson is canceled while you are sleeping, you won't be woken up
+        unnecessarily.
+        <br><br>
+        And for those wanting to wake up to ♪Always Look on the Bright Side of Life♪ by Monty Python, you are in luck! Our
+        alarm clock will play the song every morning, so you can start your day off with a smile. (Any other song on
+        YouTube works fine as well 😉).
+      </p>
+    </div>
+
+    <div>
+      <img class="heroimg" src="Images/Projects/SmartAlarmClock/pexels-mo-eid-9934462(1).png" alt="Smart Alarm Clock">
+    </div>
+  </div>
+  <!--Timeline from https://codepen.io/Divyesh-K/pen/YzxLQNz-->
+  <section class="design-section">
+    <div class="timeline">
+      <div class="timeline-empty">
+      </div>
+      <div class="timeline-middle">
+        <div class="timeline-circle"></div>
+      </div>
+      <div class="timeline-component timeline-content">
+        <h2>The idea</h2>
+        <p>
+          During the first semester of the academic year we had to create teams and propose a project. Xander and I put our brains together and came up with this amazing project. We had the choise to make it an application only. But instead we decided to make a real physical clock. For this we decided to use a Raspberry Pi 4 and a 5inch touch screen.
+          <br>
+          We made an estimate of the budget needed and created a sketch of the hard- & software. After this we presented everything and got the green light from our teacher.
+        </p>
+      </div>
+      <div class="timeline-component timeline-content">
+        <h2>Starting the project</h2>
+        <p>We ordered all necessary supplies and decided on the following technologies: <br>
+          <ul>
+            <li>Coding language: Python</li>
+            <li>GUI library: Tkinter</li>
+            <li>API support: Google Calendar, OpenWeather, and YouTube</li>
+          </ul>
+          <br>
+          We chose Google Calendar because it is widely used and easy to integrate with.
+          <br>
+          <br>
+          We chose OpenWeather because it provides a free API with the information we need.
+          <br>
+          <br>
+          We chose YouTube because it is a popular music service with a wide selection of music.
+        </p>
+      </div>
+      <div class="timeline-middle">
+        <div class="timeline-circle"></div>
+      </div>
+      <div class="timeline-empty">
+      </div>
+
+      <div class="timeline-empty">
+      </div>
+
+      <div class="timeline-middle">
+        <div class="timeline-circle"></div>
+      </div>
+      <div class=" timeline-component timeline-content">
+        <h2>Coding</h2>
+        <p>We began application development at this stage. Xander promptly handled the GUI design, while I focused on creating the necessary individual components. I developed a standalone alarm clock, a program for playing music from YouTube, code for retrieving calendar data via the Google API, and a system for obtaining the latest weather information.
+          <br><br>
+          Once Xander completed the GUI, he seamlessly merged each of these individual programs, refining them and integrating them into the interface.</p>
+      </div>
+
+      <div class="timeline-component timeline-content">
+         <h2>Housing</h2>
+          <p>After I was done working on the individual programs, I started to work on the housing of the clock. After designing a housing in Fusion 360, I went to The MakerSpace (FABLab at our campus). Together with Davy from MakerSpace, we tweaked some minor things to the design to make sure everything was good to print it with a 3D printer.
+          </p>
+      </div>
+    
+      <div class="timeline-middle">
+        <div class="timeline-circle"></div>
+      </div>
+      <div class="timeline-empty">
+      </div>
+
+      <div class="timeline-empty">
+      </div>
+
+      <div class="timeline-middle">
+        <div class="timeline-circle"></div>
+      </div>
+
+      <div class="timeline-component timeline-content">
+        <h2>Testing</h2>
+        <p>In our planning we calculated 2 weeks of testing. The goal was to use the Smart Alarm Clock like someone that just wants to use it. Then we could identify non-intuitive features, bugs and abnormalities. And of coure we tested it out with our school schedule. Xander took the alarm clock home, set everything up and yes he was presend the next day during our lesson. </p>
+     </div>
+
+     <div class="timeline-component timeline-content">
+      <h2>Final Demonstration</h2>
+      <p>At the end the project, we had to presend and demonstrate our final product to a jury/our teachers. A final report was also part of this project.</p>
+   </div>
+
+   <div class="timeline-middle">
+    <div class="timeline-circle"></div>
+  </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <p>Copyright ©2023 Senne Weijmiens</p>
+  </footer>
+
+  <script src="js/header-1.js"></script>
+</body>
+
+</html>

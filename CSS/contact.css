@@ -1,0 +1,103 @@
+.content {
+  display: grid;
+  margin: auto;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  min-width: 0px;
+  width: 75%;
+  gap: 30px;
+  background-color: rgba(63, 63, 63, 0.7);
+  border-radius: 10px;
+  margin-top: 150px;
+  padding: 20px;
+
+  margin-bottom: 80px;
+}
+
+h2 {
+  font-size: 140%;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px; /* Optional: Add border-radius for a rounded corner effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.192); /* Added box shadow for a smooth transition (reflection) */
+  transition: box-shadow 0.3s ease; /* Added transition for a smooth effect */
+  
+}
+
+img:hover {
+ 
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.562)/* Optional: Add a subtle box shadow for additional effect */
+}
+
+input {
+  width: 97%;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 10px;
+  border: none;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease; /* Added transition for a smooth effect */
+  transition: background-color  1s ease;
+}
+
+input:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Adjust alpha value for the glass effect on hover */
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.562) /* Optional: Add a subtle box shadow for additional effect */
+}
+
+.msg {
+  height: 200px;
+}
+
+
+.button {
+  width: 97%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #347736;
+  color: white;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease; /* Added transition for a smooth effect */
+  transition: background-color  1s ease;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Adjust alpha value for the glass effect on hover */
+  box-shadow: 0 0 20px #66b668; /* Optional: Add a subtle box shadow for additional effect */
+}
+
+
+@media (max-width: 1500px) {
+  .content
+  {
+    width: 90%;
+  }
+}
+
+@media (max-width: 950px) {
+  .content
+  {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 60px;
+    padding: 10px;
+  }
+
+  input {
+
+    margin-left: 5px ;
+    margin-right: 0px ;
+  }
+
+  img {
+    width: 100%;
+  }
+
+}
+

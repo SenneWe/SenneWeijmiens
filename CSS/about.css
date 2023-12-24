@@ -1,0 +1,176 @@
+.content {
+    margin-top: 50px;
+}
+
+
+h1 {
+
+    font-size: 300%;
+    margin-bottom: 20px;
+}
+
+
+.expl {
+   display: grid;
+   align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    gap: 50px;
+    width: 85%;
+    justify-content: center;
+}
+
+.me {
+
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.expl_txt {
+    font-size: 120%;
+
+}
+
+.more {
+
+    display: grid;
+   align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    gap: 50px;
+    width: 85%;
+    justify-content: center;
+}
+
+td {
+    padding: 5px;
+}
+
+
+.icon {
+
+    width: 60px;
+    margin-right: 20px;
+}
+
+.more a {
+
+    color:aliceblue;
+    vertical-align:23px;
+
+}
+
+.sites {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px  ;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.ph_pic {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.site_block {
+    width: 100%;
+    display: grid;
+    height: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-image: url("../Images/45579.jpeg");
+    
+   
+    
+    
+}
+
+.site_block:hover {
+    transform: scale(1.2);
+}
+
+
+.site_block img {
+
+    margin: auto;
+}
+  .ludo {
+
+    width: 200px;
+    
+}
+
+
+
+@media (max-width: 1700px) {
+
+    .expl {
+    gap: 30px;
+    width: 95%;
+    justify-content: center;
+}
+      
+
+}
+
+@media (max-width: 1300px) {
+
+    .expl {
+
+         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ludo {
+
+        width: 150px;
+        
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .more {
+
+         grid-template-columns: repeat(1, 1fr);
+         margin-top: 50px;
+         margin-bottom: 30px;
+    }
+
+    .ludo {
+
+        width: 150px;
+        
+    }
+
+
+    .links {
+
+        margin-bottom: 60px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .more {
+
+         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ludo {
+
+        width: 100px;
+        
+    }
+
+}

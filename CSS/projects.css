@@ -1,0 +1,92 @@
+body {
+  background-color: #2E2E2E;
+}
+
+.content{
+    
+    display: grid;
+    min-height: 500px ;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 0px;
+    margin-top: 6%;
+    margin-bottom: 190px;
+  
+  
+  }
+
+.project-card
+{
+  text-align: center;
+  color: aliceblue;
+
+
+}
+
+.more-sel :hover {
+
+  transform: translateX(8px);
+  transform: translatey(-8px);
+}
+
+img {
+
+  width: 50%;
+  transition: all 300ms;
+  cursor: pointer;
+    
+}
+
+.more-txt {
+
+  font-size: 1vw;
+}
+
+
+
+@media (max-width: 1300px) {
+
+  .content {
+
+    padding-left: 10%;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 8%;
+    padding-right: 5%;
+    transition: 0.2s;
+
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  .content {
+
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: 0.2s;
+  }
+
+}
+
+
+
+@media (max-width: 800px) {
+
+ .content {
+
+  grid-template-columns: repeat(1, 1fr);
+  padding-left:  10%;
+  margin-bottom: 70%;
+  row-gap: 13%;
+
+ }
+
+ .more-txt {
+
+  font-size: 4vw;
+ }
+
+
+}
+

@@ -1,0 +1,387 @@
+h1 {
+
+    font-size: 4vw;
+    margin-bottom: 20px;
+}
+
+.banner {
+    background-image: url("../Images/HeroPage_Bluesky.jpg");
+    background-position: center center; /* Center the image horizontally and vertically */
+    background-size: cover; /* Scale the image to cover the entire container */
+    width: 100%;
+    height: 850px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+h2 {
+
+    font-size: 5vmin;
+    text-align: center;
+    font-weight: bold;
+  
+  }
+
+.bluesky {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  width: 150vmin;
+  margin-bottom: 150px;
+}
+
+
+
+.bluesky_expl {
+
+  background-color: #4eccf3;
+  color: #3f3f3f;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid transparent; /* Add a transparent border to create separation from the background */
+  height: 50vmin;
+  text-align: justify;
+  text-align-last: center;
+  
+
+}
+
+.bluesky_expl p,.bluesky_expl h2 {
+
+  margin: 30px;
+  text-align: left;
+}
+
+.bluesky_expl p {
+
+  margin-top: 50px;
+  font-size: 2.2vmin;
+  
+}
+
+.bluesky img {
+
+  height: 50vmin;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add a shadow for the floating effect */
+  border: 1px solid transparent; /* Add a transparent border to create separation from the background */
+  
+}
+
+
+
+.content {
+
+    margin: 10px;
+    margin-top: 20px;
+    align-items: center;
+
+}
+
+.expl_pro {
+
+    margin-bottom: 20px;
+    font-size:5vmin;
+}
+
+.content-info {
+    
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.content-info img {
+
+    width: 22vmin;
+}
+
+
+.content-team {
+
+    display: grid;
+    margin: auto;
+    max-width: 100%;
+    
+}
+
+.teams {
+
+    display: grid;
+    min-height: 500px ;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 0px;
+    margin-top: 2%;
+    text-align: center;
+
+}
+
+
+.teampic {
+
+    width: 90%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 1%;
+    margin-bottom: 10px;
+
+}
+
+.teampic:hover {
+    transform: scale(1.2);
+}
+
+.team_expl {
+    display: grid;
+    min-height: 500px ;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 0px;
+    margin-top: 3%;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.team_card {
+    width: 87%;
+    height: 300px;
+    margin: auto;
+    object-fit: cover;
+    background: #3f3f3f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add a shadow for the floating effect */
+    border: 1px solid transparent; /* Add a transparent border to create separation from the background */
+    line-height: 25px;
+}
+
+
+.team_card img {
+    width: 7vmin; /* Adjust the image size as needed */
+    height: 7vmin;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.team_card p {
+    font-size: 2vmin;
+}
+
+  .tech{
+    background-color: #ebf1ff;
+    padding: 50px;
+    border-radius: 10px;
+    color: #3f3f3f;
+
+  }
+
+  .tech h2 {
+
+    margin-top: 30px;
+    margin-bottom: 60px;
+    border-bottom: transparent;
+    width: 100%;
+    align-items: center;
+  }
+  
+  #photos {
+    /*https://css-tricks.com/seamless-responsive-photo-grid/ */
+    /* Prevent vertical gaps */
+    line-height: 8;
+    width: 100%;
+    margin: auto;
+    
+    -webkit-column-count: 6;
+    -webkit-column-gap:   70px;
+    -moz-column-count:    6;
+    -moz-column-gap:      70px;
+    column-count:         6;
+    column-gap:           70px;  
+  }
+  
+  #photos img {
+    /* Just in case there are inline attributes */
+    width: 87% !important;
+    height: auto !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add a shadow for the floating effect */
+    border: 1px solid transparent; /* Add a transparent border to create separation from the background */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  @media (max-width: 1200px) {
+    #photos {
+    -moz-column-count:    4;
+    -webkit-column-count: 4;
+    column-count:         4;
+    }
+  }
+  @media (max-width: 1000px) {
+    #photos {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+    }
+  }
+  @media (max-width: 800px) {
+    #photos {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+    }
+  }
+  @media (max-width: 400px) {
+    #photos {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+    }
+  }
+ 
+
+
+@media (max-width: 1300px) {
+
+    .teams {
+  
+      padding-left: 10%;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 8%;
+      padding-right: 5%;
+      transition: 0.2s;
+  
+    }
+
+    
+
+    .team_expl {
+  
+        grid-template-columns: repeat(2, 1fr);
+        padding-left:  10%;
+        padding-right: 5%;
+        row-gap: 8%;
+        margin-top: 200px;
+        margin-bottom: 300px;
+      }
+
+      .team_card {
+        height: 350px;
+     
+        font-size: 6vmin;
+      }
+
+  }
+
+    
+@media (max-width: 800px) {
+
+    .teams {
+  
+      grid-template-columns: repeat(1, 1fr);
+      transition: 0.2s;
+      padding-left:  10%;
+      margin-bottom: 7%;
+      row-gap: 7%;
+  
+    }
+
+    
+
+    .team_expl {
+        
+        margin-top: 300px;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left:  10%;
+        margin-bottom: 300px;
+        row-gap: 7%;
+    
+      }
+
+    .content-info {
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        margin-bottom: 130px;
+    }
+
+    .banner {
+        height: 680px;
+       
+    }
+
+    h1 {
+
+        font-size: 8vw;
+        margin-bottom: 20px;
+    }
+
+    .team_card {
+        width: 87%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .team_card img {
+        width: 10vmin; /* Adjust the image size as needed */
+        height: 10vmin;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .team_card p {
+        font-size: 4vmin;
+    }
+
+    .teampic:hover {
+
+      transform: scale(1);
+    }
+
+    .content-info { width: 98%;}
+
+    .bluesky {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin: auto;
+      width: 90%;
+      margin-bottom: 150px;
+
+      
+    }
+
+    .bluesky_expl {
+
+      background-color: #4eccf3;
+      color: #3f3f3f;
+      border-radius: 10px 10px 0px 0px;
+      border: 1px solid transparent; /* Add a transparent border to create separation from the background */
+      height: auto;
+      text-align: justify;
+      text-align-last: center;
+     
+    }
+
+    .bluesky_expl p {
+      font-size: 4vmin;
+    }
+
+    .bluesky img {
+      width: 100%;
+      border-radius: 0px 0px 10px 10px;
+    }
+}
+
+
+
+
+  
