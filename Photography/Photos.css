@@ -1,0 +1,48 @@
+header {
+	padding: 30px;
+    float: none;
+    margin-right: 5px;
+}
+header::after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+#pp{
+	width:150px;
+	border-radius: 20px;
+	box-shadow:5px 5px 10px black;
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h4 {
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+}
+
+/* flexbox uitleg van: https://www.w3schools.com/css/css3_flexbox.asp */
+
+#flexbox
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+}
+
+.foto {
+
+    width: 30%;
+    padding: 10px;
+   
+}
+.horizontal
+{
+    width: 40%;
+}

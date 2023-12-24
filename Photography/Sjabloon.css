@@ -1,0 +1,129 @@
+/* Colors --> https://coolors.co/fe5f55-cfd4c5-31393c-008bf8-6c7d47*/
+
+html{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #00BFA6;
+}
+
+h2{
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: solid black 3px ;
+    width: 150px;
+    padding: 5px;
+}
+
+h4 {
+
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+b {
+
+    font-weight: bold;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+
+body {
+
+    background-color:#F6F6F6;
+}
+
+
+
+header {
+    float: left;
+    margin: 5px;
+    margin-right: 100px ;
+}
+
+
+nav li{
+    float:left;
+    width: 150px;
+    margin-top: 65px;
+}
+
+nav ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav a {
+    display:block;
+    color: black;
+    text-decoration: none;
+    text-align:center;
+    padding: 10px 15px;
+}
+
+.active {
+    background-color: #00BFA6;
+    border-radius: 10px;
+}
+
+nav ul li:hover {
+
+    background-color: rgb(161, 159, 159);
+    border-radius: 10px;
+}
+
+
+nav li ul {
+    position: absolute;
+    width: 150px;
+    display: none;
+    background-color: rgb(233, 233, 233);
+    margin: 0px;
+    border-radius: 10px;
+    box-shadow: 2px 2px  rgb(161, 159, 159);
+}
+nav li ul li {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+nav li:hover ul {
+    display:block;
+}  
+
+#wraper {
+    background-color: rgb(162, 162, 162);
+    padding:20px;
+    padding-top: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin: 5px;
+    margin-bottom: 0px;
+    min-height: 400px;
+    min-width: 400px;
+}
+
+#wraper::after {
+    content: "";
+    display: block;
+    clear: both;
+    
+}
+
+
+footer{
+    text-align: center;
+    font-size: 10px ;
+    margin-bottom: 10px;
+}
+
